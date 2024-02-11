@@ -1,4 +1,4 @@
-const express = require('express');
+orconst express = require('express');
 const app = express();
 
 //dotenv
@@ -12,7 +12,7 @@ mongoose.connection.once('open',()=>{
     console.log('mongoose connected');
 });
 
-mongoose.connection.on('error',()=>{
+mongoose.connection.on('error',(error)=>{
     console.log('Mongoose connection failed '+error);
 });
 
